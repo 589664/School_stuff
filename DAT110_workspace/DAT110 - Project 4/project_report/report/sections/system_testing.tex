@@ -1,0 +1,16 @@
+\section{System testing}
+\label{sec:system_testing}
+
+The IoT cloud system operations were tested with use of API testing tool, mentioned earlier Postman. Hardware part of the IoT system were simulated with use of JavaFX library, that implemented a graphical simulation of the ACD design. 
+
+This allows to make an input though buttons on screen, as well as we can trigger PIR – sensor as a button. At the same time there’s displayed three LED lights that light up accordingly to ACD model design of hardware presented above. This allows interaction on the same level as it would happen in real world. 
+\newline\newline
+Testing started with starting up cloud service on localhost. Further starting the Postman platform and creating testing request for GET, POST, PUT and DELETE on localhost URL. Then it was just to see if running request returned expected responses. 
+
+After this part was completed then it was time to test if communication between ACD device and cloud service was correctly implemented. In order to do that, cloud service was started up on localhost, further the simulation of ACD device was started up and put into networking mode. That means every entry attempt will be logged in cloud service. 
+\newline\newline
+Since the system is running as simulation on this machine and are not connected to an any storing internet service. All of entries are saved physically on this machine on the cloud service side. Between every startup all entries from previous session are not getting saved. But the communication is still going though internet using HTTP protocol requests/responses. 
+
+This means system is simulation connection over the internet for testing purposes. After ACD – device is set into networking mode, PIR – sensor is getting triggered and access code is entered. Further if the correct access code was entered, system gets unlocked. Otherwise put back in locked mode. 
+\newline\newline
+With use of Postman, the access code changing request is getting tested. This request is a PUT request made on localhost, with body containing Json representation of new access code. Last functionality that is tested is if changed access code is stored correctly in the cloud service. Again, running simulation of ACD device put into networking mode, this time entering new access code. There is also a way to check this with a GET request “/accessdevice/code” on cloud service. 

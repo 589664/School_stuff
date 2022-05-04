@@ -1,0 +1,97 @@
+\documentclass[11pt]{article}
+
+\usepackage{a4wide}
+\usepackage{mathptm}
+\usepackage{xspace}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{tikz}
+\usepackage{tkz-graph}
+\usetikzlibrary{shapes.misc, positioning}
+\usepackage{listings}
+\usepackage{color}
+\usepackage[colorlinks=true,urlcolor=blue]{hyperref}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+\begin{document}
+
+\title{Project report \\Cloud-IoT Access Control System}
+
+\author{Maksim Ohvrill}
+
+\maketitle
+
+\renewenvironment{abstract}
+ {\small
+  \begin{center}
+  \bfseries \abstractname\vspace{-.5em}\vspace{0pt}
+  \end{center}
+  \list{}{%
+    \setlength{\leftmargin}{20mm}% <change width
+    \setlength{\rightmargin}{\leftmargin}%
+  }%
+  \item\relax}
+ {\endlist}
+
+\begin{abstract}
+This report provides full documentation on design \& implementation of
+  IoT - cloud access control system. And will briefly explain mindset \& reasoning
+  behind access control device implementation on hardware \& software side. As
+  well as what technologies \& tools that were used to develop this system. Report
+  will conclude on how testing was done and summon up the current status of the project 
+  and what experience was achieved.
+\newline\newline
+Link to the whole project: \url{https://github.com/589664/School_stuff/tree/main/DAT110_workspace/DAT110%20-%20Project%204}
+\newline\newline
+Implementation of TinkerCAD design (part A) can be found here: \url{https://github.com/589664/School_stuff/tree/main/DAT110_workspace/DAT110%20-%20Project%204/Acess%20control%20device}
+\newline\newline
+Implementation of REST device client \& service can be found here: \url{https://github.com/589664/School_stuff/tree/main/DAT110_workspace/DAT110%20-%20Project%204/dat110-project4-cloudservice/ACCloudService/src/main/java/no/hvl/dat110/ac/restservice}
+\newline
+\url{https://github.com/589664/School_stuff/tree/main/DAT110_workspace/DAT110%20-%20Project%204/dat110-project4-iotdevice/ACIoTDevice/src/no/hvl/dat110/aciotdevice/client}
+\newline\newline
+Report written in latex can be found here:
+
+
+\end{abstract}
+
+%\input{commands}
+
+\input{sections/introduction}
+
+\input{sections/ACD_model}
+
+\input{sections/ACD_implementation}
+
+\input{sections/cloud_service}
+
+\input{sections/device_communication}
+
+\input{sections/system_testing}
+
+\input{sections/conclusion}
+
+\bibliographystyle{plain}
+\bibliography{report.bib}{}
+
+\end{document}

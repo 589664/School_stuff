@@ -1,0 +1,40 @@
+\section{REST API cloud service}
+\label{sec:cloud_service}
+
+REST (Representational state transfer)  API (application programming interface) cloud service was implemented with use of “Spark framework”, with documentation provided on this link: 
+\newline
+\url{http://sparkjava.com/documentation#request}
+
+where it was used simple methods for routes, request, and response. And implementation was based on examples provided in lectures for week 16. The main libraries used for this project are Spark that provides methods mention above. GSON a library that is developed by google and is used to convert java objects into their JSON representation. OkHttp library that provides methods used in rest – client to construct client, request, and response. That is later used to get data from the cloud as for example access code. Or log/post with another words save access entry attempt in cloud. Cloud service is implemented as an Apache maven project, that result in that it can be imported and run without any completion problem on other IDE’s. 
+\newline\newline
+Documentation for OkHttp is provided here: \url{https://square.github.io/okhttp/}
+\newline\newline
+Documentation for Gson is provided here: \url{https://sites.google.com/site/gson/gson-user-guide}
+\newline\newline
+For implementation of routes for ACD, it was used GSON class. Since the data was meant to be returned in JSON representation. 
+\newline\newline
+Routes implementation:
+
+\begin{itemize}
+
+\item First route “POST /accessdevice/log” it was used toJson() method to convert the result to JSON format, and fromJson() to extract message contained in body from request that was made. Request got the message that was supposed to be added to access – log. And response returned JSON representation of AccessEntry class, that contained both id and the message that was added from request. 
+
+\item Route “GET /accessdevice/log” is meant to get access - log over all entries that has been recorded in cloud. First getting log values that is stored in memory from access – log. And then again simply use GSON class to convert to JSON representation by calling toJson() method.
+
+\item Route “GET /accessdevice/log/:id” is meant to find and get access entry in cloud by the id. The value of parameter id needs to be provided; this was done with help of Postman testing software. First route obtained value of parameter “id” from request, further converting from string to integer. This value is then used on access – log that has a method to find entry by id from ConcurrentHashMap. 
+
+\item Route “GET /accessdevice/code” is meant to get access code from server. AccessCode class is providing get method for that purpose, that is just getting converted to JSON and returned. This route is later used for access device to update access code.
+
+\item Route “PUT /accessdevice/code” is used to update the access code that is stored in cloud service. For this system, access code is limited to input of 2 digits. First, route obtains AccessCode class from body of request that was made and overwrite current access code object in cloud. Then converts it to JSON representation and returns. This route can be used though browser or postman to make a request and change the access code. 
+
+\item Route “DELETE /accessdevice/log” simply deletes all entries that has been saved in cloud by overwriting current access – log object with an empty new one. Empty access – log is returned after being converted to JSON representation. 
+
+\end{itemize}
+
+The access code is stored in cloud, by creating a AccessCode class object. That stores access code in an integer array containing value 1 and 2 at startup. The class also provides a get/set methods and, constructor that is later used to overwrite old AccessCode object. 
+\newline
+
+Access – log is implemented in more advanced way, using AtomicInteger that provides mutual exclusive protection. In case of several access attempts is happening at the same time. The entries of access – log is stored using ConcurrentHashMap. That maps “id” integer values to AccessEntry object that also contains identifier integer and message value represented as string. Mapping identifier and entry identifier is same. Identifier in AccessEntry is used for JSON representation, while identifier in HashMap is used as key. Access – log class also provides methods for add, get, clear and JSON representation using GSON class for conversion. 
+
+
+
