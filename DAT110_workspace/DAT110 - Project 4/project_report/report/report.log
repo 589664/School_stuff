@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.26)  4 MAY 2022 11:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.26)  5 MAY 2022 18:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -849,36 +849,78 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 65.
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--72
+Underfull \hbox (badness 10000) in paragraph at lines 58--76
 
  []
 
 
-Overfull \hbox (6.43425pt too wide) in paragraph at lines 58--72
+Overfull \hbox (6.43425pt too wide) in paragraph at lines 58--76
 \OT1/ptm/m/n/10 Link to the whole project: [][]$\OT1/cmtt/m/n/10 https : / / gi
 thub . com / 589664 / School _ stuff / tree /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--72
+Underfull \hbox (badness 10000) in paragraph at lines 58--76
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--72
+Overfull \hbox (12.40428pt too wide) in paragraph at lines 58--76
+\OT1/cmtt/m/n/10 github . com / 589664 / School _ stuff / tree / main / DAT110 
+_ workspace / DAT110 %
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--76
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--72
+Overfull \hbox (17.65424pt too wide) in paragraph at lines 58--76
+[][]$\OT1/cmtt/m/n/10 https : / / github . com / 589664 / School _ stuff / tree
+ / main / DAT110 _ workspace /
+ []
 
+
+Overfull \hbox (34.9041pt too wide) in paragraph at lines 58--76
+\OT1/cmtt/m/n/10 DAT110 % 20-[] % 20Project % 204 / dat110-[]project4-[]cloudse
+rvice / ACCloudService /
+ []
+
+
+Overfull \hbox (17.65424pt too wide) in paragraph at lines 58--76
+[][]$\OT1/cmtt/m/n/10 https : / / github . com / 589664 / School _ stuff / tree
+ / main / DAT110 _ workspace /
+ []
+
+
+Overfull \hbox (3.40437pt too wide) in paragraph at lines 58--76
+\OT1/cmtt/m/n/10 DAT110 % 20-[] % 20Project % 204 / dat110-[]project4-[]iotdevi
+ce / ACIoTDevice /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--76
+
+ []
+
+
+Overfull \hbox (9.76433pt too wide) in paragraph at lines 58--76
+\OT1/ptm/m/n/10 Report writ-ten in la-tex can be found here: [][]$\OT1/cmtt/m/n
+/10 https : / / github . com / 589664 / School _
+ []
+
+
+Overfull \hbox (18.15424pt too wide) in paragraph at lines 58--76
+\OT1/cmtt/m/n/10 stuff / tree / main / DAT110 _ workspace / DAT110 % 20-[] % 20
+Project % 204 / project _
  []
 
 (sections/introduction.tex [1
 
 {C:/Users/maksi/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]) (sections/A
 CD_model.tex
-<figs/FNS.png, id=44, 827.09pt x 462.22687pt>
+<figs/FNS.png, id=56, 827.09pt x 462.22687pt>
 File: figs/FNS.png Graphic file (type png)
 <use figs/FNS.png>
 Package pdftex.def Info: figs/FNS.png  used on input line 6.
@@ -898,37 +940,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
 
-<figs/ACD_circut.png, id=52, 698.61pt x 646.66594pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--6
+
+ []
+
+<figs/ACD_circut.png, id=64, 698.61pt x 646.66594pt>
 File: figs/ACD_circut.png Graphic file (type png)
 <use figs/ACD_circut.png>
 Package pdftex.def Info: figs/ACD_circut.png  used on input line 9.
 (pdftex.def)             Requested size: 349.30414pt x 323.33217pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--16
+Underfull \hbox (badness 10000) in paragraph at lines 13--16
 
  []
 
-[3 <./figs/ACD_circut.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 19--21
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 22--24
+[3 <./figs/ACD_circut.png>])
+Underfull \hbox (badness 10000) in paragraph at lines 17--87
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--27
+Underfull \hbox (badness 10000) in paragraph at lines 17--87
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--30
+Underfull \hbox (badness 10000) in paragraph at lines 17--87
 
  []
 
-) (sections/cloud_service.tex
+(sections/cloud_service.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
@@ -986,7 +1028,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--13
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 14--89
+Underfull \hbox (badness 10000) in paragraph at lines 14--93
 
  []
 
@@ -1002,7 +1044,7 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 Here is how much of TeX's memory you used:
  22934 strings out of 478582
  436169 string characters out of 2844344
- 877929 words of memory out of 3000000
+ 879929 words of memory out of 3000000
  40674 multiletter control sequences out of 15000+600000
  501181 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1012,9 +1054,9 @@ Here is how much of TeX's memory you used:
 0.pfb><C:/Users/maksi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8
 a.pfb><C:/Users/maksi/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8
 a.pfb>
-Output written on report.pdf (7 pages, 268564 bytes).
+Output written on report.pdf (7 pages, 272844 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
+ 112 PDF objects out of 1000 (max. 8388607)
  17 named destinations out of 1000 (max. 500000)
  79 words of extra memory for PDF output out of 10000 (max. 10000000)
 
